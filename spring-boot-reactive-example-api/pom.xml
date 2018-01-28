@@ -5,7 +5,7 @@
     <parent>
         <artifactId>spring-boot-reactive-example</artifactId>
         <groupId>com.posc</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -99,7 +99,6 @@
                 <configuration>
                     <imageName>spring-boot-reactive-example</imageName>
                     <repository>spring-boot-reactive-example</repository>
-                    <entryPoint>["java", "-cp", "/USR/newtprod/spring-boot-reactive-example/jars/*:/USR/newtprod/spring-boot-reactive-example/conf", "org.springframework.boot.loader.JarLauncher"]</entryPoint>
 
                     <!-- copy the service's jar file from target into the root directory of the image -->
                     <resources>

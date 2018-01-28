@@ -8,9 +8,9 @@ VOLUME /USR/newtprod/spring-boot-reactive-example/jars
 
 COPY src/main/resources/application-dev.properties /USR/newtprod/spring-boot-reactive-example/conf/application.properties
 
-COPY src/main/resources/logback-dev.xml /USR/newtprod/spring-boot-reactive-example/conf/logback.xml
+COPY src/main/resources/logback-dev.xml /USR/newtprod/spring-boot-reactive-example/conf/logback-spring.xml
 
-COPY target/spring-boot-reactive-example-api-1.0-SNAPSHOT-exec.jar /USR/newtprod/spring-boot-reactive-example/jars/spring-boot-reactive-example-api-1.0-SNAPSHOT-exec.jar
+COPY target/spring-boot-reactive-example-api-0.1.0-SNAPSHOT-exec.jar /USR/newtprod/spring-boot-reactive-example/jars/spring-boot-reactive-example-api-0.1.0-SNAPSHOT-exec.jar
 
 EXPOSE 10104
 
