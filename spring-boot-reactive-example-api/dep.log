@@ -1,0 +1,84 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding spring-boot-reactive-example-api 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:tree[m [1m(default-cli)[m @ [36mspring-boot-reactive-example-api[0;1m ---[m
+[[1;34mINFO[m] com.posc:spring-boot-reactive-example-api:jar:1.0-SNAPSHOT
+[[1;34mINFO[m] +- org.springframework.boot:spring-boot-starter-webflux:jar:2.0.0.M7:compile
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.0.M7:compile
+[[1;34mINFO[m] |  |  +- org.springframework.boot:spring-boot:jar:2.0.0.M7:compile
+[[1;34mINFO[m] |  |  |  \- org.springframework:spring-context:jar:5.0.2.RELEASE:compile
+[[1;34mINFO[m] |  |  |     +- org.springframework:spring-aop:jar:5.0.2.RELEASE:compile
+[[1;34mINFO[m] |  |  |     \- org.springframework:spring-expression:jar:5.0.2.RELEASE:compile
+[[1;34mINFO[m] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.0.M7:compile
+[[1;34mINFO[m] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.0.M7:compile
+[[1;34mINFO[m] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[[1;34mINFO[m] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[[1;34mINFO[m] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[[1;34mINFO[m] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[[1;34mINFO[m] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[[1;34mINFO[m] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.1:compile
+[[1;34mINFO[m] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.0.M7:compile
+[[1;34mINFO[m] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.2:compile
+[[1;34mINFO[m] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[[1;34mINFO[m] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.2:compile
+[[1;34mINFO[m] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.2:compile
+[[1;34mINFO[m] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.2:compile
+[[1;34mINFO[m] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.2:compile
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.0.M7:compile
+[[1;34mINFO[m] |  |  \- io.projectreactor.ipc:reactor-netty:jar:0.7.2.RELEASE:compile
+[[1;34mINFO[m] |  |     +- io.netty:netty-codec-http:jar:4.1.17.Final:compile
+[[1;34mINFO[m] |  |     |  \- io.netty:netty-codec:jar:4.1.17.Final:compile
+[[1;34mINFO[m] |  |     +- io.netty:netty-handler:jar:4.1.17.Final:compile
+[[1;34mINFO[m] |  |     |  +- io.netty:netty-buffer:jar:4.1.17.Final:compile
+[[1;34mINFO[m] |  |     |  \- io.netty:netty-transport:jar:4.1.17.Final:compile
+[[1;34mINFO[m] |  |     |     \- io.netty:netty-resolver:jar:4.1.17.Final:compile
+[[1;34mINFO[m] |  |     +- io.netty:netty-handler-proxy:jar:4.1.17.Final:compile
+[[1;34mINFO[m] |  |     |  \- io.netty:netty-codec-socks:jar:4.1.17.Final:compile
+[[1;34mINFO[m] |  |     \- io.netty:netty-transport-native-epoll:jar:4.1.17.Final:compile
+[[1;34mINFO[m] |  |        +- io.netty:netty-common:jar:4.1.17.Final:compile
+[[1;34mINFO[m] |  |        \- io.netty:netty-transport-native-unix-common:jar:4.1.17.Final:compile
+[[1;34mINFO[m] |  +- org.hibernate.validator:hibernate-validator:jar:6.0.5.Final:compile
+[[1;34mINFO[m] |  |  +- javax.validation:validation-api:jar:2.0.0.Final:compile
+[[1;34mINFO[m] |  |  +- org.jboss.logging:jboss-logging:jar:3.3.1.Final:compile
+[[1;34mINFO[m] |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[[1;34mINFO[m] |  +- org.springframework:spring-web:jar:5.0.2.RELEASE:compile
+[[1;34mINFO[m] |  |  \- org.springframework:spring-beans:jar:5.0.2.RELEASE:compile
+[[1;34mINFO[m] |  +- org.springframework:spring-webflux:jar:5.0.2.RELEASE:compile
+[[1;34mINFO[m] |  |  \- io.projectreactor:reactor-core:jar:3.1.2.RELEASE:compile
+[[1;34mINFO[m] |  |     \- org.reactivestreams:reactive-streams:jar:1.0.1:compile
+[[1;34mINFO[m] |  \- org.synchronoss.cloud:nio-multipart-parser:jar:1.1.0:compile
+[[1;34mINFO[m] |     +- org.slf4j:slf4j-api:jar:1.7.25:compile
+[[1;34mINFO[m] |     \- org.synchronoss.cloud:nio-stream-storage:jar:1.1.3:compile
+[[1;34mINFO[m] +- com.posc:spring-boot-reactive-example-service:jar:1.0-SNAPSHOT:compile
+[[1;34mINFO[m] \- org.springframework.boot:spring-boot-starter-test:jar:2.0.0.M7:compile
+[[1;34mINFO[m]    +- org.springframework.boot:spring-boot-test:jar:2.0.0.M7:compile
+[[1;34mINFO[m]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.0.M7:compile
+[[1;34mINFO[m]    +- com.jayway.jsonpath:json-path:jar:2.4.0:compile
+[[1;34mINFO[m]    |  \- net.minidev:json-smart:jar:2.3:compile
+[[1;34mINFO[m]    |     \- net.minidev:accessors-smart:jar:1.2:compile
+[[1;34mINFO[m]    |        \- org.ow2.asm:asm:jar:5.0.4:compile
+[[1;34mINFO[m]    +- junit:junit:jar:4.12:compile
+[[1;34mINFO[m]    +- org.assertj:assertj-core:jar:3.8.0:compile
+[[1;34mINFO[m]    +- org.mockito:mockito-core:jar:2.12.0:compile
+[[1;34mINFO[m]    |  +- net.bytebuddy:byte-buddy:jar:1.7.9:compile
+[[1;34mINFO[m]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.9:compile
+[[1;34mINFO[m]    |  \- org.objenesis:objenesis:jar:2.6:compile
+[[1;34mINFO[m]    +- org.hamcrest:hamcrest-core:jar:1.3:compile
+[[1;34mINFO[m]    +- org.hamcrest:hamcrest-library:jar:1.3:compile
+[[1;34mINFO[m]    +- org.skyscreamer:jsonassert:jar:1.5.0:compile
+[[1;34mINFO[m]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:compile
+[[1;34mINFO[m]    +- org.springframework:spring-core:jar:5.0.2.RELEASE:compile
+[[1;34mINFO[m]    |  \- org.springframework:spring-jcl:jar:5.0.2.RELEASE:compile
+[[1;34mINFO[m]    +- org.springframework:spring-test:jar:5.0.2.RELEASE:compile
+[[1;34mINFO[m]    \- org.xmlunit:xmlunit-core:jar:2.5.1:compile
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 1.253 s
+[[1;34mINFO[m] Finished at: 2018-01-27T18:10:39+01:00
+[[1;34mINFO[m] Final Memory: 23M/303M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

@@ -1,0 +1,14 @@
+version: '2'
+
+
+services:
+
+  spring-boot-reactive-example:
+    image: spring-boot-reactive-example:latest
+    entrypoint:
+      - java
+      - -cp
+      - /USR/newtprod/spring-boot-reactive-example/jars/*:/USR/newtprod/spring-boot-reactive-example/conf
+      - org.springframework.boot.loader.JarLauncher
+    ports:
+      - "10104:10104"
