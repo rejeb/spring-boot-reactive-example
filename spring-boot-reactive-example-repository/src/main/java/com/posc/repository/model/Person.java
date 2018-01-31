@@ -6,7 +6,7 @@ import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
-@Table("people_by_first_name")
+@Table("person")
 public class Person {
 
   @PrimaryKey

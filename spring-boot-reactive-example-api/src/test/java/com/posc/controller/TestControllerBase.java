@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(TestController.class)
-public class TestControllerBase {
+public abstract class TestControllerBase {
 
 
   @Autowired

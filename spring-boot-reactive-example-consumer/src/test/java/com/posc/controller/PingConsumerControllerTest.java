@@ -1,6 +1,7 @@
 package com.posc.controller;
 
 import com.posc.Application;
+import com.posc.model.Person;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 
 @ActiveProfiles("it")
@@ -29,6 +31,14 @@ public class PingConsumerControllerTest {
     String pong = testRestTemplate.getForObject("/ping", String.class);
 
     assertEquals("Hello pong.", pong);
+  }
+
+
+  @Test
+  public void testPerson() {
+    String pong = testRestTemplate.getForObject("/persons/jane/one", String.class);
+
+    assertNotNull(pong);
   }
 
 }
