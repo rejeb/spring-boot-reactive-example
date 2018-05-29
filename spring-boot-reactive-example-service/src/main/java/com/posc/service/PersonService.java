@@ -11,4 +11,6 @@ public interface PersonService {
   Flux<Person> findByFirstName(String firstName);
 
   Mono<Person> addPerson(Mono<Person> person);
+
+  Flux<Person> addPerson(Flux<Person> person);
 }

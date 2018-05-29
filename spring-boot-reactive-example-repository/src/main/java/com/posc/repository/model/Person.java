@@ -18,7 +18,7 @@ public class Person {
   @Column
   private final String gender;
 
-  public Person() {
+  private Person() {
     key = null;
     lastName = null;
     gender = null;

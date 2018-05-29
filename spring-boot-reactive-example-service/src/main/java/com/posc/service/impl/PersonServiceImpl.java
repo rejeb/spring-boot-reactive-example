@@ -28,6 +28,13 @@ public class PersonServiceImpl implements PersonService {
   }
 
   @Override
+  public Flux<Person> addPerson(Flux<Person> person) {
+    return person.map(personToRepositoryPersonMapper)
+                        .flatMap(personRepository::save)
+                        .map(personRepositoryToPersonMapper);
+  }
+
+  @Override
   public Flux<Person> findByFirstName(String firstName) {
     return personRepository.findByKeyFirstName(firstName).map(personRepositoryToPersonMapper);
   }
