@@ -15,7 +15,7 @@ import reactor.core.publisher.Mono;
 import static org.springframework.http.HttpStatus.CREATED;
 
 @RestController
-@RequestMapping("${server.servlet.context-path}/persons")
+@RequestMapping("/persons")
 public class PersonController {
 
   private final PersonService personService;

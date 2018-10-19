@@ -21,12 +21,12 @@ public class CassandraConfiguration extends AbstractReactiveCassandraConfigurati
   @Value("${spring.data.cassandra.keyspace-name}")
   private String keyspaceName;
 
-  @Value("${spring.data.cassandra.username}")
-  private String username;
-
-
-  @Value("${spring.data.cassandra.password}")
-  private String password;
+//  @Value("${spring.data.cassandra.username}")
+//  private String username;
+//
+//
+//  @Value("${spring.data.cassandra.password}")
+//  private String password;
 
   @Override
   protected String getKeyspaceName() {
@@ -35,15 +35,15 @@ public class CassandraConfiguration extends AbstractReactiveCassandraConfigurati
 
 
 
-  /**
-   * Returns the {@link AuthProvider}.
-   *
-   * @return the {@link AuthProvider}, may be {@literal null}.
-   */
-  @Override
-  protected AuthProvider getAuthProvider() {
-    AuthProvider authProvider = new PlainTextAuthProvider(username, password);
-    return authProvider;
-  }
+//  /**
+//   * Returns the {@link AuthProvider}.
+//   *
+//   * @return the {@link AuthProvider}, may be {@literal null}.
+//   */
+//  @Override
+//  protected AuthProvider getAuthProvider() {
+//    AuthProvider authProvider = new PlainTextAuthProvider(username, password);
+//    return authProvider;
+//  }
 }
 
