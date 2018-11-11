@@ -10,13 +10,13 @@ import org.springframework.data.cassandra.core.mapping.Table;
 public class Person {
 
   @PrimaryKey
-  private final PersonKey key;
+  private  PersonKey key;
 
   @Column("last_name")
-  private final String lastName;
+  private String lastName;
 
   @Column
-  private final String gender;
+  private String gender;
 
   private Person() {
     key = null;
@@ -30,7 +30,22 @@ public class Person {
     this.gender = gender;
   }
 
-  /**
+    public Person setKey(PersonKey key) {
+        this.key = key;
+        return this;
+    }
+
+    public Person setLastName(String lastName) {
+        this.lastName = lastName;
+        return this;
+    }
+
+    public Person setGender(String gender) {
+        this.gender = gender;
+        return this;
+    }
+
+    /**
    * Get key
    *
    * @return key

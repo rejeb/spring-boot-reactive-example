@@ -13,4 +13,6 @@ public interface PersonService {
   Mono<Person> addPerson(Mono<Person> person);
 
   Flux<Person> addPerson(Flux<Person> person);
+
+    Flux<Person> findAll();
 }

@@ -3,6 +3,7 @@ package com.posc.controller;
 import com.posc.model.Person;
 import com.posc.service.PersonService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -54,6 +55,11 @@ public class PersonController {
     return personService.findOnePerson(firstName)
                         .map(ResponseEntity::ok)
                         .defaultIfEmpty(ResponseEntity.notFound().build());
+  }
+
+  @GetMapping
+    public Flux<Person> persons(){
+      return personService.findAll();
   }
 
 }

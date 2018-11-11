@@ -15,14 +15,14 @@ import static org.springframework.data.cassandra.core.cql.PrimaryKeyType.PARTITI
 @PrimaryKeyClass
 public class PersonKey implements Serializable{
 
-  @PrimaryKeyColumn(name = "first_name", type = PARTITIONED)
-  private final String firstName;
+  @PrimaryKeyColumn(name = "first_name", type = PARTITIONED,ordinal = 0)
+  private String firstName;
 
   @PrimaryKeyColumn(name = "date_of_birth", ordinal = 0)
-  private final LocalDateTime dateOfBirth;
+  private LocalDateTime dateOfBirth;
 
   @PrimaryKeyColumn(name = "person_id", ordinal = 1, ordering = DESCENDING)
-  private final UUID id;
+  private UUID id;
 
   public PersonKey() {
     firstName = null;
@@ -36,7 +36,22 @@ public class PersonKey implements Serializable{
     this.id = id;
   }
 
-  /**
+    public PersonKey setFirstName(String firstName) {
+        this.firstName = firstName;
+        return this;
+    }
+
+    public PersonKey setDateOfBirth(LocalDateTime dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+        return this;
+    }
+
+    public PersonKey setId(UUID id) {
+        this.id = id;
+        return this;
+    }
+
+    /**
    * Get firstName
    *
    * @return firstName
@@ -65,6 +80,8 @@ public class PersonKey implements Serializable{
   public UUID getId() {
     return id;
   }
+
+
 
   @Override
   public boolean equals(Object o) {
